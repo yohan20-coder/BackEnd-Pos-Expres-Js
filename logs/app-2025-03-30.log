@@ -1,0 +1,44 @@
+ [LOGGER] 2025-03-30 11:28:34.278 PM error : uncaughtException: app is not defined
+ReferenceError: app is not defined
+    at file:///E:/Project%20Aplikasi/pos-js/backend/src/middleware/index.js:8:1
+    at ModuleJob.run (node:internal/modules/esm/module_job:271:25)
+    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:578:26)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:116:5)
+ [LOGGER] 2025-03-30 11:28:39.224 PM error : uncaughtException: app is not defined
+ReferenceError: app is not defined
+    at file:///E:/Project%20Aplikasi/pos-js/backend/src/middleware/index.js:8:1
+    at ModuleJob.run (node:internal/modules/esm/module_job:271:25)
+    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:578:26)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:116:5)
+ [LOGGER] 2025-03-30 11:29:47.939 PM error : uncaughtException: app is not defined
+ReferenceError: app is not defined
+    at file:///E:/Project%20Aplikasi/pos-js/backend/src/middleware/index.js:8:1
+    at ModuleJob.run (node:internal/modules/esm/module_job:271:25)
+    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:578:26)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:116:5)
+ [LOGGER] 2025-03-30 11:30:43.536 PM error : uncaughtException: app is not defined
+ReferenceError: app is not defined
+    at file:///E:/Project%20Aplikasi/pos-js/backend/src/middleware/index.js:8:1
+    at ModuleJob.run (node:internal/modules/esm/module_job:271:25)
+    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:578:26)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:116:5)
+ [LOGGER] 2025-03-30 11:41:41.432 PM error : controllers/user.controller.js:createUser - 
+Invalid `prisma.user.create()` invocation:
+
+
+Unique constraint failed on the constraint: `User_userName_key`
+ [LOGGER] 2025-03-30 11:41:50.784 PM error : controllers/user.controller.js:createUser - 
+Invalid `prisma.user.create()` invocation:
+
+
+Unique constraint failed on the constraint: `User_userName_key`
+ [LOGGER] 2025-03-30 11:42:06.585 PM error : controllers/user.controller.js:createUser - 
+Invalid `prisma.user.create()` invocation:
+
+
+Unique constraint failed on the constraint: `User_userName_key`
+ [LOGGER] 2025-03-30 11:42:11.913 PM error : controllers/user.controller.js:createUser - 
+Invalid `prisma.user.create()` invocation:
+
+
+Unique constraint failed on the constraint: `User_userName_key`
