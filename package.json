@@ -15,7 +15,8 @@
     "jsonwebtoken": "^9.0.2",
     "pdf-creator-node": "^2.3.5",
     "winston": "^3.17.0",
-    "winston-daily-rotate-file": "^5.0.0"
+    "winston-daily-rotate-file": "^5.0.0",
+    "yarn": "^1.22.22"
   },
   "devDependencies": {
     "@eslint/js": "^9.22.0",
@@ -24,7 +25,7 @@
     "nodemon": "^3.1.9",
     "prisma": "^6.5.0"
   },
-  "type" : "module",
+  "type": "module",
   "scripts": {
     "dev": "nodemon ./src/index.js"
   }

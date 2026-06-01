@@ -1,10 +1,13 @@
-### create user
+@BASE_URL=http://localhost:3000/api
+
+### Create User
 POST {{BASE_URL}}/users
 Content-Type: application/json
+
 {
-    "name":"Pojok",
-    "userName":"codee",
-    "password":"1234",
-    "confirmPassword":"1234",
-    "role":"admin"
+    "name": "Andy",
+    "userName": "andy",
+    "password": "123456",
+    "confirmPassword": "123456",
+    "role": "admin"
 }
