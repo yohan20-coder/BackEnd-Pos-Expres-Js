@@ -1,0 +1,39 @@
+ [LOGGER] 2026-06-01 02:38:37.785 PM error : uncaughtException: logger is not defined
+ReferenceError: logger is not defined
+    at verifyAccessToken (file:///D:/Aplikasi%20Sistem/Point%20Of%20Sale/BackEnd-Pos-Expres-Js/src/utils/jwt.js:32:7)
+    at autenticate (file:///D:/Aplikasi%20Sistem/Point%20Of%20Sale/BackEnd-Pos-Expres-Js/src/controllers/error.controller.js:17:18)
+    at Layer.handle [as handle_request] (D:\Aplikasi Sistem\Point Of Sale\BackEnd-Pos-Expres-Js\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\Aplikasi Sistem\Point Of Sale\BackEnd-Pos-Expres-Js\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\Aplikasi Sistem\Point Of Sale\BackEnd-Pos-Expres-Js\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\Aplikasi Sistem\Point Of Sale\BackEnd-Pos-Expres-Js\node_modules\express\lib\router\layer.js:95:5)
+    at D:\Aplikasi Sistem\Point Of Sale\BackEnd-Pos-Expres-Js\node_modules\express\lib\router\index.js:284:15
+    at param (D:\Aplikasi Sistem\Point Of Sale\BackEnd-Pos-Expres-Js\node_modules\express\lib\router\index.js:365:14)
+    at param (D:\Aplikasi Sistem\Point Of Sale\BackEnd-Pos-Expres-Js\node_modules\express\lib\router\index.js:376:14)
+    at router.process_params (D:\Aplikasi Sistem\Point Of Sale\BackEnd-Pos-Expres-Js\node_modules\express\lib\router\index.js:421:3)
+ [LOGGER] 2026-06-01 02:45:02.564 PM error : uncaughtException: logger is not defined
+ReferenceError: logger is not defined
+    at verifyAccessToken (file:///D:/Aplikasi%20Sistem/Point%20Of%20Sale/BackEnd-Pos-Expres-Js/src/utils/jwt.js:32:7)
+    at autenticate (file:///D:/Aplikasi%20Sistem/Point%20Of%20Sale/BackEnd-Pos-Expres-Js/src/controllers/error.controller.js:17:18)
+    at Layer.handle [as handle_request] (D:\Aplikasi Sistem\Point Of Sale\BackEnd-Pos-Expres-Js\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\Aplikasi Sistem\Point Of Sale\BackEnd-Pos-Expres-Js\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\Aplikasi Sistem\Point Of Sale\BackEnd-Pos-Expres-Js\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\Aplikasi Sistem\Point Of Sale\BackEnd-Pos-Expres-Js\node_modules\express\lib\router\layer.js:95:5)
+    at D:\Aplikasi Sistem\Point Of Sale\BackEnd-Pos-Expres-Js\node_modules\express\lib\router\index.js:284:15
+    at param (D:\Aplikasi Sistem\Point Of Sale\BackEnd-Pos-Expres-Js\node_modules\express\lib\router\index.js:365:14)
+    at param (D:\Aplikasi Sistem\Point Of Sale\BackEnd-Pos-Expres-Js\node_modules\express\lib\router\index.js:376:14)
+    at router.process_params (D:\Aplikasi Sistem\Point Of Sale\BackEnd-Pos-Expres-Js\node_modules\express\lib\router\index.js:421:3)
+ [LOGGER] 2026-06-01 02:59:17.663 PM error : controllers/user.controller.js:createUser - 
+Invalid `prisma.user.create()` invocation:
+
+
+Unique constraint failed on the constraint: `User_userName_key`
+ [LOGGER] 2026-06-01 02:59:43.338 PM error : controllers/user.controller.js:createUser - 
+Invalid `prisma.user.create()` invocation:
+
+
+Unique constraint failed on the constraint: `User_userName_key`
+ [LOGGER] 2026-06-01 03:04:51.941 PM error : controllers/user.controller.js:createUser - 
+Invalid `prisma.user.create()` invocation:
+
+
+Unique constraint failed on the constraint: `User_userName_key`

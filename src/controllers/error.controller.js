@@ -1,4 +1,4 @@
-import { verifyAccessToken } from "../utils/jwt";
+import { verifyAccessToken } from "../utils/jwt.js";
 
 export const autenticate = async(req, res, next) =>{
     let lanjut = 1;
