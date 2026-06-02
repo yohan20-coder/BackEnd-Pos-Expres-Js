@@ -1,0 +1,17 @@
+ [LOGGER] 2026-06-02 10:43:32.809 PM error : uncaughtException: getnerateAccessToken is not defined
+ReferenceError: getnerateAccessToken is not defined
+    at file:///D:/Aplikasi%20Sistem/Point%20Of%20Sale/BackEnd-Pos-Expres-Js/src/routes/user.route.js:11:47
+    at ModuleJob.run (node:internal/modules/esm/module_job:437:25)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async node:internal/modules/esm/loader:639:26
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5)
+ [LOGGER] 2026-06-02 10:43:36.603 PM error : uncaughtException: setRefreshToken is not defined
+ReferenceError: setRefreshToken is not defined
+    at file:///D:/Aplikasi%20Sistem/Point%20Of%20Sale/BackEnd-Pos-Expres-Js/src/routes/user.route.js:11:47
+    at ModuleJob.run (node:internal/modules/esm/module_job:437:25)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async node:internal/modules/esm/loader:639:26
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5)
+ [LOGGER] 2026-06-02 11:11:51.441 PM error : controllers/user.controller.js:loginUser - secretOrPrivateKey must have a value
+ [LOGGER] 2026-06-02 11:11:59.709 PM error : controllers/user.controller.js:loginUser - secretOrPrivateKey must have a value
+ [LOGGER] 2026-06-02 11:12:52.536 PM error : controllers/user.controller.js:loginUser - secretOrPrivateKey must have a value

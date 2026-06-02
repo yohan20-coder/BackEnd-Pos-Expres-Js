@@ -53,3 +53,12 @@ Authorization: Bearer {{$global.accessToken}}
 GET {{BASE_URL}}/users/1   
 Content-Type: application/json
 Authorization: Bearer {{$global.accessToken}}
+
+### refresh token
+GET {{BASE_URL}}/users/refresh
+Authorization: Bearer {{$global.refreshToken}}
+
+{{
+  $global.accessToken=JSON.parse(response.body).acessToken;
+  $global.refreshToken=JSON.parse(response.body).refreshToken;
+}}

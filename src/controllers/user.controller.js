@@ -1,12 +1,11 @@
 import { encript } from "../utils/bcript.js";
 import prisma from "../utils/client.js";
 import { logger } from "../utils/winston.js";
-import { userValidation } from "../validations/user.validation.js";
+import { userValidation, userUpdateValidation } from "../validations/user.validation.js";
 import { compare } from "../utils/bcript.js";
-import {  generateAccessToken, generateRefreshToken } from "../utils/jwt.js";
+import {  generateAccessToken, generateRefreshToken, verifyRefreshToken, parseJwt } from "../utils/jwt.js";
 
 export const createUser=async(req,res) =>{
-
     const {error, value} = userValidation(req.body);
     if(error){
         return res.status(400).json({
@@ -53,7 +52,7 @@ export const updateUser=async(req,res) =>{
         });
     }
 
-    const {error, value} = userValidation(req.body);
+    const {error, value} = userUpdateValidation(req.body);
     if(error){
         return res.status(400).json({
             message: error.details[0].message,
@@ -138,6 +137,9 @@ export const loginUser = async(req,res) =>{
 }
 };
 
+
+
+
 export const deleteUser = async(req, res) => {
     try {
         const result = await prisma.user.delete({
@@ -208,3 +210,54 @@ export const getUserById = async(req, res) => {
         });
     }
 };
+
+export const setRefreshToken = async(req, res) => {
+  try{
+    const authHeader = req.headers["authorization"];
+    const token = authHeader && authHeader.split(" ")[1];
+    if(!token){
+        return res.status(401).json({
+            message:"Verify token failed",
+            result:null,
+        });
+    }
+    const verify = await verifyRefreshToken(token);
+    if(!verify){
+        return res.status(401).json({
+            message:"Verify token failed",
+            result:null,
+        });
+    }
+    let data = await parseJwt(token);
+    const user = await prisma.user.findUnique({
+        where:{
+            userName:data.userName,
+        },
+    });
+    if(!user){
+        return res.status(404).json({
+            message:"User not found",
+            result:null,
+        });
+    }else{
+        user.password = "xxxxxxxxxxxxxxxxxxx";
+        const acessToken = generateAccessToken(user);
+        const refreshToken = generateRefreshToken(user);
+        return res.status(200).json({
+            message:"Refresh Success",
+            result:user,
+            acessToken,
+            refreshToken,
+        });
+  }
+}catch(error){
+    logger.error(
+        "controllers/user.controller.js:setRefreshToken - " + error.message
+    );
+    return res.status(500).json({
+        message: error.message,
+        result:null,
+    });
+}
+}
+
