@@ -38,3 +38,8 @@ Authorization: Bearer {{$global.accessToken}}
     "confirmPassword": "123456",
     "role": "admin"
 }
+
+### Delete User
+DELETE {{BASE_URL}}/users/5 
+Content-Type: application/json
+Authorization: Bearer {{$global.accessToken}}

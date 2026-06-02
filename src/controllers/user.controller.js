@@ -137,3 +137,26 @@ export const loginUser = async(req,res) =>{
     });
 }
 };
+
+export const deleteUser = async(req, res) => {
+    try {
+        const result = await prisma.user.delete({
+            where: {
+                id: Number(req.params.id),
+            },
+        });
+        result.password = "xxxxxxxxxxxxxxxxxxx";
+        return res.status(200).json({
+            message: "User deleted successfully",
+            result,
+        });
+    } catch (error) {
+        logger.error(
+            "controllers/user.controller.js:deleteUser - " + error.message
+        );
+        return res.status(500).json({
+            message: error.message,
+            result:null,
+        });
+    }
+};
