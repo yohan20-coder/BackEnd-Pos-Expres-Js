@@ -160,3 +160,51 @@ export const deleteUser = async(req, res) => {
         });
     }
 };
+
+export const getAllUser = async(req, res) => {
+    try {
+        const result = await prisma.user.findMany({});
+       
+        return res.status(200).json({
+            message: "Success",
+            result,
+        });
+    } catch (error) {
+        logger.error(
+            "controllers/user.controller.js:getAllUser - " + error.message
+        );
+        return res.status(500).json({
+            message: error.message,
+            result:null,
+        });
+    }
+};
+
+export const getUserById = async(req, res) => {
+    try {
+        const result = await prisma.user.findUnique({
+            where: {
+                id: Number(req.params.id),
+            },
+        });
+        if (!result) {
+            return res.status(404).json({
+                message: "User not found",
+                result: null,
+            });
+        }
+        result.password = "xxxxxxxxxxxxxxxxxxx";
+        return res.status(200).json({
+            message: "Success",
+            result,
+        });
+    } catch (error) {
+        logger.error(
+            "controllers/user.controller.js:getUserById - " + error.message
+        );
+        return res.status(500).json({
+            message: error.message,
+            result: null,
+        });
+    }
+};
