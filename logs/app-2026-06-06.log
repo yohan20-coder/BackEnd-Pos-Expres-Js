@@ -1,0 +1,34 @@
+ [LOGGER] 2026-06-06 09:44:56.200 PM error : uncaughtException: getCategoryById is not defined
+ReferenceError: getCategoryById is not defined
+    at file:///D:/Aplikasi%20Sistem/Point%20Of%20Sale/BackEnd-Pos-Expres-Js/src/routes/category.route.js:7:50
+    at ModuleJob.run (node:internal/modules/esm/module_job:437:25)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async node:internal/modules/esm/loader:639:26
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5)
+ [LOGGER] 2026-06-06 09:47:14.994 PM error : controller/kategori.controller.js:getAllCategori -Cannot read properties of undefined (reading 'findMany')
+ [LOGGER] 2026-06-06 09:53:03.674 PM error : controller/kategori.controller.js:createCategory -Cannot read properties of undefined (reading 'create')
+ [LOGGER] 2026-06-06 09:53:33.136 PM error : controller/kategori.controller.js:createCategory -Cannot read properties of undefined (reading 'create')
+ [LOGGER] 2026-06-06 09:55:26.081 PM error : uncaughtException: categoriValidation is not defined
+ReferenceError: categoriValidation is not defined
+    at updateCategory (file:///D:/Aplikasi%20Sistem/Point%20Of%20Sale/BackEnd-Pos-Expres-Js/src/controllers/kategori.controller.js:110:30)
+    at Layer.handle [as handle_request] (D:\Aplikasi Sistem\Point Of Sale\BackEnd-Pos-Expres-Js\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\Aplikasi Sistem\Point Of Sale\BackEnd-Pos-Expres-Js\node_modules\express\lib\router\route.js:149:13)
+    at autenticate (file:///D:/Aplikasi%20Sistem/Point%20Of%20Sale/BackEnd-Pos-Expres-Js/src/controllers/error.controller.js:27:9)
+    at Layer.handle [as handle_request] (D:\Aplikasi Sistem\Point Of Sale\BackEnd-Pos-Expres-Js\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\Aplikasi Sistem\Point Of Sale\BackEnd-Pos-Expres-Js\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\Aplikasi Sistem\Point Of Sale\BackEnd-Pos-Expres-Js\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\Aplikasi Sistem\Point Of Sale\BackEnd-Pos-Expres-Js\node_modules\express\lib\router\layer.js:95:5)
+    at D:\Aplikasi Sistem\Point Of Sale\BackEnd-Pos-Expres-Js\node_modules\express\lib\router\index.js:284:15
+    at param (D:\Aplikasi Sistem\Point Of Sale\BackEnd-Pos-Expres-Js\node_modules\express\lib\router\index.js:365:14)
+ [LOGGER] 2026-06-06 09:55:52.780 PM error : uncaughtException: categoriValidation is not defined
+ReferenceError: categoriValidation is not defined
+    at updateCategory (file:///D:/Aplikasi%20Sistem/Point%20Of%20Sale/BackEnd-Pos-Expres-Js/src/controllers/kategori.controller.js:110:30)
+    at Layer.handle [as handle_request] (D:\Aplikasi Sistem\Point Of Sale\BackEnd-Pos-Expres-Js\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\Aplikasi Sistem\Point Of Sale\BackEnd-Pos-Expres-Js\node_modules\express\lib\router\route.js:149:13)
+    at autenticate (file:///D:/Aplikasi%20Sistem/Point%20Of%20Sale/BackEnd-Pos-Expres-Js/src/controllers/error.controller.js:27:9)
+    at Layer.handle [as handle_request] (D:\Aplikasi Sistem\Point Of Sale\BackEnd-Pos-Expres-Js\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\Aplikasi Sistem\Point Of Sale\BackEnd-Pos-Expres-Js\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\Aplikasi Sistem\Point Of Sale\BackEnd-Pos-Expres-Js\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\Aplikasi Sistem\Point Of Sale\BackEnd-Pos-Expres-Js\node_modules\express\lib\router\layer.js:95:5)
+    at D:\Aplikasi Sistem\Point Of Sale\BackEnd-Pos-Expres-Js\node_modules\express\lib\router\index.js:284:15
+    at param (D:\Aplikasi Sistem\Point Of Sale\BackEnd-Pos-Expres-Js\node_modules\express\lib\router\index.js:365:14)

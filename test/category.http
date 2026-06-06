@@ -1,0 +1,28 @@
+### get All Categori
+GET {{BASE_URL}}/categorys
+Authorization: Bearer {{$global.accessToken}}
+
+### get Categori by id
+GET {{BASE_URL}}/categorys/1
+Authorization: Bearer {{$global.accessToken}}
+
+### create Categori
+POST {{BASE_URL}}/categorys
+Content-Type: application/json
+Authorization: Bearer {{$global.accessToken}}
+{
+    "kategoryName": "xxx"
+}
+
+### update Categori
+PUT {{BASE_URL}}/categorys/3
+Content-Type: application/json
+Authorization: Bearer {{$global.accessToken}}
+{
+    "kategoryName": "lase"
+}
+
+### delete Categori
+DELETE {{BASE_URL}}/categorys/3
+Content-Type: application/json
+Authorization: Bearer {{$global.accessToken}}
